@@ -1,3 +1,9 @@
+# Template TypeScript fro Package
+
+npm package向けのテンプレート。
+
+**package.jsonに公開するfile等のpathやrepository urlを適当なものに置き換えること。**
+
 ## tsconfig.json
 
 - 環境に合わせてinclude, excludeにpathを追加が必要
@@ -5,17 +11,14 @@
 ## build
 
 - tsc
-- webpack
-
-webpackはts-loaderだけ用意していてHTMLやCSSについては別途設定が必要
 
 ## test環境
 
-[power-assert-js/espower-typescript: power-assert instrumentor for TypeScript](https://github.com/power-assert-js/espower-typescript)
+- mocha
+- powser-assert(espower-typescript)
+- sinon
 
-```
-npm i -D mocha power-assert espower-assert @types/power-assert @types/mocha
-```
+[power-assert-js/espower-typescript: power-assert instrumentor for TypeScript](https://github.com/power-assert-js/espower-typescript)
 
 tsconfig.json
 
@@ -61,23 +64,3 @@ describe('sample', function () {
 
 - tsconfig.jsonの`noEmitOnError`オプションをfalseにする
 - テストファイルが外部からファイルをimportしてない場合にerrorになる
-
-
-## React
-
-```
-npm i -S react react-dom @types/react @types/react-dom tslint-react
-```
-
-tsconfig.json
-
-```
-{
-    "compilerOptions": {
-        "jsx": "react"
-    },
-}
-```
-
-tslintのreact ruleは含んでいないので別途追加が必要
-[palantir/tslint-react: Lint rules related to React & JSX for TSLint.](https://github.com/palantir/tslint-react)
