@@ -73,12 +73,12 @@
         "no-duplicate-variable": true,
         "no-eval": true,
         "no-invalid-this": true,
-        "no-null-keyword": true,
+        // "no-null-keyword": true,
         "no-shadowed-variable": true,
         "no-string-literal": true,
         "no-switch-case-fall-through": true,
         "no-unsafe-finally": true,
-        "no-unused-expression": true,
+        "no-unused-expression": "allow-fast-null-checks",
         "no-unused-new": true,
         "no-var-keyword": true,
         "radix": true,
@@ -111,7 +111,7 @@
             Style
          #################################*/
         "align": [
-            true,
+            false,
             "parameters",
             "arguments",
             "statements"
@@ -123,7 +123,7 @@
         ],
         // 判断迷ってる
         "interface-name": [
-            true,
+            false,
             "never-prefix"
         ],
         "jsdoc-format": true,
