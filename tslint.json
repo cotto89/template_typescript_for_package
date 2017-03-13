@@ -16,7 +16,7 @@
                     "public-static-method",
                     "protected-static-method",
                     "private-static-method",
-                    "public-instance-field",
+                    // "public-instance-field",
                     "protected-instance-field",
                     "private-instance-field",
                     "constructor",
@@ -29,9 +29,9 @@
         "no-any": false,
         "no-internal-module": true,
         "no-reference": true,
-        "no-var-requires": true,
+        "no-var-requires": false,
         "typedef": [
-            true,
+            false,
             "member-variable-declaration"
         ],
         "typedef-whitespace": [
@@ -73,9 +73,8 @@
         "no-duplicate-variable": true,
         "no-eval": true,
         "no-invalid-this": true,
-        // "no-null-keyword": true,
         "no-shadowed-variable": true,
-        "no-string-literal": true,
+        "no-string-literal": false,
         "no-switch-case-fall-through": true,
         "no-unsafe-finally": true,
         "no-unused-expression": "allow-fast-null-checks",
