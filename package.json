@@ -3,6 +3,13 @@
   "description": "template_typescript",
   "version": "0.0.1",
   "author": "cotto",
+  "ava": {
+    "files": [
+      "./test/compiled/**/*.test.js"
+    ],
+    "verbose": true,
+    "babel": "inherit"
+  },
   "bugs": {
     "url": ""
   },
@@ -13,6 +20,7 @@
     "@types/mocha": "^2.2.40",
     "@types/power-assert": "^1.4.29",
     "@types/sinon": "^1.16.35",
+    "ava": "^0.18.2",
     "espower-typescript": "^8.0.0",
     "mocha": "^3.2.0",
     "npm-run-all": "^4.0.2",
@@ -36,12 +44,15 @@
   },
   "scripts": {
     "build": "npm-run-all build:*",
-    "build:src": "tsc",
-    "clean": "npm-run-all clean:** -p",
+    "build:dist": "tsc",
+    "build:test": "tsc -p test",
+    "clean": "run-p clean:**",
     "clean:dist": "rimraf ./dist",
+    "clean:test": "rimraf ./test/compiled",
     "lint": "tslint src/**/*.ts",
     "start": "tsc -w",
-    "test": "NODE_ENV=test mocha"
+    "test": "NODE_ENV=test npm-run-all clean:test build:test -p 'build:test -- -w' 'test:ava -- -w'",
+    "test:ava": "ava -w"
   },
   "types": "dist/index.d.ts"
 }
