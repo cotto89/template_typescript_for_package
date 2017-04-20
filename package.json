@@ -17,6 +17,7 @@
     "@types/node": "^7.0.13"
   },
   "devDependencies": {
+    "@cotto/tslint-config": "^0.0.2",
     "@types/sinon": "^2.1.2",
     "ava": "^0.19.1",
     "npm-run-all": "^4.0.2",
