@@ -20,9 +20,7 @@
         "forceConsistentCasingInFileNames": true,
         "skipDefaultLibCheck": true,
         "pretty": true,
-        "types": [
-            "node"
-        ]
+        "types": []
     },
     "include": [
         "src/**/*.ts"
