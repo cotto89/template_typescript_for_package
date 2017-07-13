@@ -1,12 +1,16 @@
 {
+    "typescript.tsdk": "./node_modules/typescript/lib",
     "javascript.validate.enable": true,
     "eslint.enable": false,
-    "typescript.tsdk": "./node_modules/typescript/lib",
+    "tslint.exclude": [
+        "**/public/**",
+        "**/dist/**",
+        "**/es/**",
+        "**/node_modules/**"
+    ],
     "files.exclude": {
         "**/dist/**": false,
         "**/**bundle.**/**": true,
-        "node_modules": true,
-        "typings": false,
-        "**/*.d.ts": false
+        "node_modules": true
     }
 }

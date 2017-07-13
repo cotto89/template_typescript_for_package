@@ -3,51 +3,50 @@
   "description": "template_typescript",
   "version": "0.0.1",
   "author": "cotto",
-  "ava": {
-    "files": [
-      "./test/compiled/**/*.test.js"
-    ],
-    "verbose": true,
-    "babel": "inherit"
-  },
-  "bugs": {
-    "url": ""
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "@cotto/tslint-config": "^0.0.5",
-    "@types/node": "^8.0.9",
-    "@types/sinon": "^2.3.2",
-    "ava": "^0.20.0",
-    "npm-run-all": "^4.0.2",
-    "rimraf": "^2.6.1",
-    "sinon": "^2.3.6",
-    "tslint": "^5.5.0",
-    "typescript": "^2.4.1"
-  },
   "files": [
+    "es",
     "dist",
     "README.md",
     "LICENCE"
   ],
-  "keywords": [],
-  "license": "MIT",
   "main": "dist/index.js",
+  "jsnext:main": "es/index.js",
+  "module": "es/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": ""
   },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "@types/node": "^8.0.11"
+  },
+  "devDependencies": {
+    "@cotto/tslint-config": "^0.0.5",
+    "@types/jest": "^20.0.2",
+    "@types/sinon": "^2.3.2",
+    "jest": "^20.0.4",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "sinon": "^2.3.7",
+    "ts-jest": "^20.0.7",
+    "tslint": "^5.5.0",
+    "typescript": "^2.4.1"
+  },
+  "keywords": [],
   "scripts": {
     "build": "npm-run-all build:*",
     "build:dist": "tsc",
-    "build:test": "tsc -p test",
+    "build:es": "tsc --module es2015 --outDir ./es",
     "clean": "run-p clean:**",
     "clean:dist": "rimraf ./dist",
-    "clean:test": "rimraf ./test/compiled",
+    "clean:es": "rimraf ./es",
     "lint": "tslint src/**/*.ts",
     "start": "tsc -w",
-    "test": "NODE_ENV=test npm-run-all clean:test build:test -p 'build:test -- -w' 'test:ava -- -w'",
-    "test:ava": "ava -w"
-  },
-  "types": "dist/index.d.ts"
+    "test": "NODE_ENV=test jest --watch"
+  }
 }
