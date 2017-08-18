@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXXX.git"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXX/issues"
   },
-  "homepage": "",
+  "homepage": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXXXX",
   "dependencies": {
     "@types/node": "^8.0.24"
   },
@@ -47,6 +47,8 @@
     "clean:es": "rimraf ./es",
     "lint": "tslint src/**/*.ts",
     "start": "tsc -w",
+    "myprepublish": "run-s clean build",
+    "mypublish": "npm run myprepublish && npm publish --access=public",
     "test": "NODE_ENV=test jest --watch"
   }
 }
