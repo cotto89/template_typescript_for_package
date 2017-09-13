@@ -1,6 +1,6 @@
 {
-  "name": "template_typescript",
-  "description": "template_typescript",
+  "name": "XXX",
+  "description": "XXX",
   "version": "0.0.1",
   "author": "cotto",
   "files": [
@@ -16,22 +16,22 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXXX.git"
+    "url": "https://github.com/cotttpan/XXX.git"
   },
   "bugs": {
-    "url": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXX/issues"
+    "url": "https://github.com/cotttpan/XXX/issues"
   },
-  "homepage": "https://github.com/cotttpan/XXXXXXXXXXXXXXXXXXXXX",
+  "homepage": "https://github.com/cotttpan/XXX",
   "dependencies": {
-    "@types/node": "^8.0.27"
+    "@types/node": "^8.0.28"
   },
   "devDependencies": {
     "@cotto/tslint-config": "^0.0.6",
     "@types/jest": "^20.0.8",
-    "@types/sinon": "^2.3.3",
-    "jest": "^21.0.1",
+    "@types/sinon": "^2.3.4",
+    "jest": "^21.0.2",
     "npm-run-all": "^4.1.1",
-    "rimraf": "^2.6.1",
+    "rimraf": "^2.6.2",
     "sinon": "^3.2.1",
     "ts-jest": "^21.0.0",
     "tslint": "^5.7.0",
