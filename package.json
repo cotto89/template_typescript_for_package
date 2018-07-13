@@ -2,7 +2,7 @@
   "name": "xxxxxx",
   "description": "xxxxxx",
   "version": "0.0.1",
-  "author": "cotto",
+  "author": "nullabletypo",
   "files": [
     "es",
     "dist",
@@ -16,12 +16,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cotttpan/xxxxxx.git"
+    "url": "https://github.com/nullabletypo/xxxxxx.git"
   },
   "bugs": {
-    "url": "https://github.com/cotttpan/xxxxxx/issues"
+    "url": "https://github.com/nullabletypo/xxxxxx/issues"
   },
-  "homepage": "https://github.com/cotttpan/xxxxxx",
+  "homepage": "https://github.com/nullabletypo/xxxxxx",
   "dependencies": {},
   "devDependencies": {
     "@cotto/tslint-config": "^0.1.4",
