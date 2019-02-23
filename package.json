@@ -44,7 +44,7 @@
     "clean": "run-p clean:**",
     "clean:dist": "rimraf dist",
     "clean:es": "rimraf es",
-    "lint": "tslint src/**/*.ts",
+    "lint": "eslint src/**/*.ts",
     "release:github": "git add . && git commit -am $npm_package_version --allow-empty && git tag $npm_package_version && git push && git push --tags",
     "release": "run-s clean compile test release:github",
     "test": "jest"
