@@ -2,8 +2,5 @@
   "extends": [
     "eslint-config-nullabletypo",
     "eslint-config-nullabletypo/+typescript"
-  ],
-  "env": {
-    "node": true
-  }
+  ]
 }
